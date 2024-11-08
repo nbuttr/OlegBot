@@ -1,0 +1,22 @@
+version: '3.8'
+
+volumes:
+  postgres-data:
+
+services:
+  owi-media-postgresql:
+    container_name: tg-bot-postgresql
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=tgBot
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1337
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    deploy:
+      resources:
+        limits:
+          memory: 300m

@@ -1,0 +1,4 @@
+com\example\telegramBot\service\TelegramBot.class
+com\example\telegramBot\TelegramBotApplication.class
+com\example\telegramBot\config\BotConfiguration.class
+com\example\telegramBot\config\BotInitializer.class
