@@ -4,7 +4,7 @@ volumes:
   postgres-data:
 
 services:
-  owi-media-postgresql:
+  tg-bot-postgresql:
     container_name: tg-bot-postgresql
     image: postgres:16-alpine
     restart: unless-stopped
